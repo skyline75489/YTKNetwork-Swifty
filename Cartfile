@@ -1,0 +1,5 @@
+github "Yuantiku/YTKNetwork" ~> 2.0
+github "ReactiveX/RxSwift" ~> 3.0
+github "mxcl/PromiseKit" ~> 4.0
+github "SwiftyJSON/SwiftyJSON"
+
