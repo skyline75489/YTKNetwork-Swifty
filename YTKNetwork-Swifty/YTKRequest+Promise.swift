@@ -10,13 +10,15 @@ import YTKNetwork
 import PromiseKit
 
 extension YTKRequest {
+
     func toPromise() -> Promise<YTKBaseRequest> {
         return Promise { fulfill, reject in
-            self.startWithCompletionBlock(success: { (request) in
+            self.start(success: { (request) in
                 fulfill(request)
             }, failure: { (request) in
                 reject(request.error!)
             })
         }
     }
+
 }

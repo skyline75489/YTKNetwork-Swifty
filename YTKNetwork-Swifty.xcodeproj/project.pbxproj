@@ -16,6 +16,7 @@
 		2D1D03FF1DC79526000236D5 /* YTKNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1D03FA1DC79526000236D5 /* YTKNetwork.framework */; };
 		2DAF652D1DC80F0000610AF1 /* YTKRequest+SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAF652C1DC80F0000610AF1 /* YTKRequest+SwiftyJSON.swift */; };
 		2DAF652F1DC80F1A00610AF1 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAF652E1DC80F1A00610AF1 /* SwiftyJSON.framework */; };
+		2DE2141A1DCA1C1C00403650 /* YTKNetwork+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE214191DCA1C1C00403650 /* YTKNetwork+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		2D1D03FA1DC79526000236D5 /* YTKNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YTKNetwork.framework; path = Carthage/Build/iOS/YTKNetwork.framework; sourceTree = "<group>"; };
 		2DAF652C1DC80F0000610AF1 /* YTKRequest+SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YTKRequest+SwiftyJSON.swift"; sourceTree = "<group>"; };
 		2DAF652E1DC80F1A00610AF1 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		2DE214191DCA1C1C00403650 /* YTKNetwork+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "YTKNetwork+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		2D1D03E51DC78EC7000236D5 /* YTKNetwork-Swifty */ = {
 			isa = PBXGroup;
 			children = (
+				2DE214191DCA1C1C00403650 /* YTKNetwork+Ext.swift */,
 				2DAF652B1DC80EE700610AF1 /* SwiftyJSON */,
 				2D1D03F11DC794C4000236D5 /* PromiseKit */,
 				2D1D03F01DC794BD000236D5 /* RxSwift */,
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DAF652D1DC80F0000610AF1 /* YTKRequest+SwiftyJSON.swift in Sources */,
+				2DE2141A1DCA1C1C00403650 /* YTKNetwork+Ext.swift in Sources */,
 				2D1D03EF1DC78FBA000236D5 /* YTKRequest+RxSwift.swift in Sources */,
 				2D1D03F31DC794F6000236D5 /* YTKRequest+Promise.swift in Sources */,
 			);

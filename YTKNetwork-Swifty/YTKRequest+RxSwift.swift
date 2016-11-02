@@ -10,11 +10,12 @@ import YTKNetwork
 import RxSwift
 
 extension YTKRequest {
+
     func toObservable() -> Observable<YTKBaseRequest> {
         return Observable<YTKBaseRequest>.create { [weak self] observer -> Disposable in
             guard let sself = self else { return Disposables.create() }
 
-            sself.startWithCompletionBlock(success: { (request) in
+            sself.start(success: { (request) in
                 observer.on(.next(request))
                 observer.on(.completed)
             }, failure: { (request) in
@@ -25,4 +26,5 @@ extension YTKRequest {
             }
         }
     }
+
 }
